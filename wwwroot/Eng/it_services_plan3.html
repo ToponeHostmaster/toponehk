@@ -1,0 +1,919 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <title>Topone Information Technology Limited - Economy</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="IT Support HK, IT Support Hong Kong, IT Services, IT Services Hong Kong, Server Support, ,PC Support, Computer Support, Computer Repair, Outsource IT Services, IT Outsourcing, Technical Support, Technical Services,  Computer Maintenance, IT Maintenance, Computer Services, Computer Support, 電腦維修, 維修電腦, 上門電腦維修, 上門維修電腦, 電腦保養, 電腦修理, 電腦公司, 網絡安裝, 系統顧問, IT 顧問服務, IT 外判, 技術支援" />
+
+    <meta name="description" content="Topone提供了不同的優質IT Support(IT support)Support Plan去切合不同客戶的需要，所有Support Plan內容及收費均公開透明" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <script charset="UTF-8" src="js/validate_en.js"></script>
+    <!--reCaptCha-->
+    <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+    <script type="text/javascript" src="engine_B/script.js"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72604428-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72604428-1');
+</script>
+    <script type="text/javascript">
+        //<![CDATA[
+
+        function UpdatePlan() {
+
+            //CHECKING
+            var cno1Value = document.getElementById("cno1").value;
+            if (isNaN(cno1Value) || cno1Value < 0 || cno1Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("cno1").value = "";
+                return false;
+            }
+
+            var sno1Value = document.getElementById("sno1").value;
+            if (isNaN(sno1Value) || sno1Value < 0 || sno1Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("sno1").value = "";
+                return false;
+            }
+
+            var cno2Value = document.getElementById("cno2").value;
+            if (isNaN(cno2Value) || cno2Value < 0 || cno2Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("cno2").value = "";
+                return false;
+            }
+
+            var sno2Value = document.getElementById("sno2").value;
+            if (isNaN(sno2Value) || sno2Value < 0 || sno2Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("sno2").value = "";
+                return false;
+            }
+
+            var cno3Value = document.getElementById("cno3").value;
+            if (isNaN(cno3Value) || cno3Value < 0 || cno3Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("cno3").value = "";
+                return false;
+            }
+
+            var sno3Value = document.getElementById("sno3").value;
+            if (isNaN(sno3Value) || sno3Value < 0 || sno3Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("sno3").value = "";
+                return false;
+            }
+
+            var cno4Value = document.getElementById("cno4").value;
+            if (isNaN(cno4Value) || cno4Value < 0 || cno4Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("cno4").value = "";
+                return false;
+            }
+
+            var sno4Value = document.getElementById("sno4").value;
+            if (isNaN(sno4Value) || sno4Value < 0 || sno4Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("sno4").value = "";
+                return false;
+            }
+
+            var cno5Value = document.getElementById("cno5").value;
+            if (isNaN(cno5Value) || cno5Value < 0 || cno5Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("cno5").value = "";
+                return false;
+            }
+
+            var sno5Value = document.getElementById("sno5").value;
+            if (isNaN(sno5Value) || sno5Value < 0 || sno5Value == "") {
+                alert("Invalid data input!");
+                document.getElementById("sno5").value = "";
+                return false;
+            }
+
+            //calculation
+            var PlanAHrValue = cno1Value * 4.8 + sno1Value * 5 * 4.8;
+            if (PlanAHrValue < 72) {
+                PlanAHrValue = 72;
+            }
+            var PlanAM12 = Math.ceil(PlanAHrValue * 250 / 12);
+            PlanAHrValue = Math.ceil(PlanAHrValue);
+
+            var storage1 = supportform.dlemail1.options[supportform.dlemail1.selectedIndex].value;
+
+            var email1fee = document.getElementById("email1").value * storage1;
+            PlanAM12 = PlanAM12 + parseInt(email1fee) - 500;
+
+            document.getElementById("PlanA12").innerHTML = "HK$" + PlanAM12;
+
+            // End of Plan A
+
+
+            //PlanB
+            var PlanBHrValue = cno2Value * 4.8 + (sno2Value - 1) * 5 * 4.8;
+            if (PlanBHrValue < 72) {
+                PlanBHrValue = 72;
+            }
+            var PlanBM12 = Math.ceil(PlanBHrValue * 250 / 12);
+            PlanBHrValue = Math.ceil(PlanBHrValue);
+
+            var storage2 = supportform.dlemail2.options[supportform.dlemail2.selectedIndex].value;
+
+            var email2fee = document.getElementById("email2").value * storage2;
+            PlanBM12 = PlanBM12 + parseInt(email2fee) - 500;
+
+            document.getElementById("PlanB12").innerHTML = "HK$" + PlanBM12;
+
+            //End of Plan B
+
+
+            //Plan C
+            var PlanCHrValue = cno3Value * 4.8 + (sno3Value - 2) * 5 * 4.8;
+            if (PlanCHrValue < 72) {
+                PlanCHrValue = 72;
+            }
+            var PlanCM12 = Math.ceil(PlanCHrValue * 250 / 12);
+            PlanCHrValue = Math.ceil(PlanCHrValue);
+
+            var storage3 = supportform.dlemail3.options[supportform.dlemail3.selectedIndex].value;
+
+            var email3fee = document.getElementById("email3").value * storage3;
+            PlanCM12 = PlanCM12 + parseInt(email3fee) - 500;
+
+            document.getElementById("PlanC12").innerHTML = "HK$" + PlanCM12;
+
+            //Plan D
+
+            var PlanDHrValue = cno4Value * 4.8 + (sno4Value - 3) * 5 * 4.8;
+            var PlanDM12 = Math.ceil(PlanDHrValue * 250 / 12);
+            PlanDHrValue = Math.ceil(PlanDHrValue);
+
+            var storage4 = supportform.dlemail4.options[supportform.dlemail4.selectedIndex].value;
+
+            var email4fee = document.getElementById("email4").value * storage4;
+            PlanDM12 = PlanDM12 + parseInt(email4fee) - 500;
+
+            document.getElementById("PlanD12").innerHTML = "HK$" + PlanDM12;
+            //Plan E
+
+            var PlanEHrValue = cno5Value * 4.8 + (sno5Value - 4) * 5 * 4.8;
+            var PlanEM12 = Math.ceil(PlanEHrValue * 250 / 12);
+            PlanEHrValue = Math.ceil(PlanEHrValue);
+
+            var storage5 = supportform.dlemail5.options[supportform.dlemail5.selectedIndex].value;
+
+            var email5fee = document.getElementById("email5").value * storage5;
+            PlanEM12 = PlanEM12 + parseInt(email5fee) - 500;
+
+            document.getElementById("PlanE12").innerHTML = "HK$" + PlanEM12;
+
+        }
+        // ]]>
+    </script>
+
+
+    <style type="text/css">
+        .faq-answer {
+            font-family: Taipei;
+            font-size: 12px;
+            line-height: 200%;
+        }
+
+        .faq-answer2 {
+            display: none;
+            font-family: Taipei;
+            font-size: 12px;
+            line-height: 200%;
+        }
+    </style>
+
+    <noscript>
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px|Monda:700|Architects+Daughter|Courgette' rel='stylesheet'
+            type='text/css'>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-wide.css" />
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body id="bg_style2">
+
+    <!-- Header -->
+    <div id="header">
+
+        <!-- Logo -->
+
+        <div style="top:-200px; float:left; position:relative; width:0px;">
+            <h1><a href="index.html" id="logo"><img src="images/logo.png" alt="Topone Logo" id="toplogo" /></a></h1>
+        </div>
+
+
+
+
+        <!-- Nav -->
+        <!-- #BeginLibraryItem "/Library/c_nav_02.lbi" -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">
+                        <div id="home_text">Home</div><img src="images/logo_nav.png" alt="home page link" />
+                    </a></li>
+                    <li><a href="gov_Fund.html">D-Biz</a></li>
+                <li>
+                    <a href="about_us.html">About Us</a>
+                    <ul>
+                        <li><a href="ab_company.html">Company Profile</a></li>
+                        <li><a href="ab_news.html">News & Events</a></li>
+                        <li><a href="ab_business_distribution.html">Services</a></li>
+                        <li><a href="ab_global_support.html">Locations </a></li>
+                        <li>
+                            <a href="ab_tech_partners.html">Partners</a>
+                            <ul>
+                                <li><a href="ab_tech_partners.html">Technical Partners</a></li>
+                                <li><a href="ab_business_partners.html">Value Added Service Partners</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="current">
+                    <a href="it_support.html">IT Outsource</a>
+                    <ul>
+                        <li><a href="it_services.html">Overview</a></li>
+                        <li>
+                            <a href="it_services_charges.html">Support Plan</a>
+                            <ul>
+                                <li><a href="it_services_plan1.html">Full Protection</a></li>                                 <li><a href="it_services_plan7.html">Smart Choice</a></li>
+                                <li><a href="it_services_plan3.html">Economy</a></li>
+                                <li><a href="it_services_plan4.html">Social enterprise</a></li>
+                                <li><a href="it_services_plan5.html">Premium</a></li>
+                                <li><a href="it_services_plan6.html">Optional</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="it_services_pledge.html">Quality of Services</a></li>
+                        <li>
+                            <a href="it_corporate_customers.html">Customer</a>
+                            <ul>
+                                <li><a href="it_success_stories.html">Success Stories</a></li>
+                                <li><a href="it_stories_share.html">Solution share</a></li>
+                                <li><a href="it_customers.html">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="it_customer_platform.html">Customer Center</a></li>
+                        <li><a href="it_remote_support.html">Remote Support</a></li>
+                        <li><a href="it_sendbig_service.html">SendBig Service</a></li>
+                        <li><a href="it_maintenance_service.html">Webpage Maintenance</a></li>
+                        <li><a href="it_monitoring_and_warning_service.html">Monitoring Service</a></li>
+                        <li><a href="it_dns_service.html">Google Cloud DNS service</a></li>
+                        <li><a href="it_regular_inspection.html">Preventive Checking</a></li>
+                        <li><a href="it_emergency_borrowed_hardware_service.html">Hardware on Loan</a></li>
+                        <li><a href="it_pc_data_encryption.html">Data Encryption</a></li>
+                        <li><a href="it_computer_data_destruction.html">Data Wiping</a></li>
+                        <li><a href="it_training.html">Training</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="supportsystem.html">Support System</a>
+                    <ul>
+                        <li><a href="supportsystem.html">Overview</a></li>
+                        <li><a href="supportsystem_record.html">Ticket Record</a></li>
+                        <li><a href="supportsystem_resource.html">Asset Management</a></li>
+                        <li><a href="supportsystem_monitor.html">Monitoring & Checking</a></li>
+                        <li><a href="supportsystem_contact.html">Contact Management</a></li>
+                        <li><a href="supportsystem_doc.html">File Management</a></li>
+                        <li><a href="supportsystem_permission.html">Permission Control</a></li>
+                        <li><a href="supportsystem_delivery.html">Delivery & Installation</a></li>
+                        <li><a href="supportsystem_budget.html">Budget & Contract Renew</a></li><li><a href="supportsystem_reporting.html">Service Report</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="cloud_service.html">Cloud Services</a>
+                    <ul>
+                        <li><a href="cs_cloud_introduction.html">Cloud Overview</a></li>
+                        <li>
+                            <a href="cs_email_hosting.html">Email Hosting</a>
+                            <ul>
+                                <li><a href="cs_email_office_365_email.html">Office 365 Email</a></li>
+                                <li><a href="cs_email_google_email.html">Gmail</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cs_microsoft_email_backup.html">Email & SharePoint Backup</a></li>
+                        <li><a href="cs_microsoft_office_365_rental.html">Office 365 Business Plan</a></li>
+                        <li><a href="cs_cloud_server.html">Microsoft Azure</a></li>
+                        <li><a href="cs_microsoft_sharepoint_services.html">Microsoft SharePoint</a></li>
+                        <li><a href="cs_microsoft_office_rental.html">Microsoft Office 365</a></li>
+                        <li><a href="cs_cloud_backup.html">Cloud Backup</a></li>
+                        <li><a href="cs_cloud_antivirus.html">Cloud Antivirus</a></li>
+                        <li><a href="cs_web_hosting.html">Website Hosting</a></li>
+                    </ul>
+                </li>
+
+
+
+
+
+
+                <li><a href="system_development.html">Programming</a>
+                    <ul>
+                            <li><a href="sd_introduction.html">Introduction</a></li>
+                            <li><a href="sd_order_system.html">Order System</a></li>
+                            <li><a href="sd_factory_system.html">Factory Management System</a></li>
+                            <li><a href="sd_RS.html">Tax & Reconciliation System</a></li>
+                            <li><a href="sd_wechat.html">WeChat Public Platform</a></li>
+                            <li><a href="sd_apps.html">Mobile Application </a></li>
+                    </ul></li>
+
+
+
+                <li>
+                    <a href="solution.html">Solution</a>
+
+                    <ul>
+
+                        <li>
+                            <a href="sol_vpn.html">System Safety</a>
+                            <ul>
+                                <li><a href="sol_vpn.html">VPN Secure Remote Access</a> </li>
+                                <li><a href="sol_security_token.html">Security Token</a></li>
+                                <li><a href="sol_endpoint_protector.html">Endpoint protector</a></li>
+                                <li><a href="sol_online_mgt_sys.html">Internet Access Management</a></li>
+
+
+
+                                <li><a href="sol_window_mgt.html">Desktop Management</a></li>
+
+
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="sol_virtualization.html">Virtualization</a>
+                            <ul>
+                                <li><a href="sol_virtualization.html#p1">Server Virtualization</a></li>
+                                <li><a href="sol_virtualization.html#p2">Network Virtualization</a></li>
+                                <li><a href="sol_virtualization.html#p3">Desktop Virtualization</a></li>
+                                <li><a href="sol_virtualization.html#p4">Application Virtualization</a></li>
+                                <li><a href="sol_virtualization.html#p5">Storage Virtualization</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="sol_wc.html">Wireless Networking</a>
+                            <ul>
+                                <li><a href="sol_wc.html">Wireless Controller</a></li>
+                                <li><a href="sol_wap.html">Wireless Access Point</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="sol_web_design.html">Website Design</a>
+                            <ul>
+                                <li><a href="sol_web_design.html">Creativity - Web Designer</a></li>
+                                <li><a href="sol_web_program.html">Functionality - Web Programming</a></li>
+                                <li><a href="sol_web_system.html">Functionality - CMS Demo</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="sol_video_conference.html">Video Conferencing</a></li>
+                        <li><a href="sol_network_cabling.html">Structure Cabling</a></li>
+                        <li><a href="sol_window_data.html">Data Recovery</a></li>
+
+                    </ul>
+                </li>
+
+
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav><!-- #EndLibraryItem -->
+    </div><!-- #BeginLibraryItem "/Library/c_mini_nav.lbi" -->
+    <div id="mini_nav">
+
+        <div id="mini_nav_inside">
+
+            <a href="http://www.topone.hk/" target="_blank">繁</a> |
+            <a href="../sch/index.html" target="_blank">簡</a> |
+            <a href="./index.html">Eng</a></div>
+
+    </div><!-- #EndLibraryItem -->
+    <!-- Main -->
+    <section class="wrapper style1">
+        <div class="container" id="container">
+            <div class="row double">
+                <div class="4u">
+                    <div id="sidebar">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <h3>IT Support</h3>
+                            <div id="sub_nav_hl">
+                                <img src="images/sub_nav_hl.png" id="sub_nav_hl_5" alt="it support" />
+                            </div><!-- #BeginLibraryItem "/Library/c_sub_nav_02.lbi" -->
+                            <ul class="links">
+                                <li><a href="it_services.html">Overview</a></li>
+                                <li>
+                                    <a href="it_services_charges.html">Support Plan</a>
+                                    <ul style="margin-left:20px; margin-bottom:0px;">
+                                        <li><a href="it_services_plan1.html">Full Protection</a></li>                                 <li><a href="it_services_plan7.html">Smart Choice</a></li>
+                                        <li><a href="it_services_plan3.html">Economy</a></li>
+                                        <li><a href="it_services_plan4.html">Social enterprise</a></li>
+                                        <li><a href="it_services_plan5.html">Premium</a></li>
+                                        <li><a href="it_services_plan6.html">Optional</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li><a href="it_services_pledge.html">Quality of Services</a></li>
+                                <li>
+                                    <a href="it_corporate_customers.html">Customer</a>
+                                </li>
+                                <li><a href="it_customer_platform.html">Customer Center</a></li>
+                                <li><a href="it_remote_support.html">Remote Support</a></li>
+                                <li><a href="it_sendbig_service.html">SendBig Service</a></li>
+                                <li><a href="it_maintenance_service.html">Webpage Maintenance</a></li>
+                                <li><a href="it_monitoring_and_warning_service.html">Monitoring Service</a></li>
+                                <li><a href="it_dns_service.html">Google Cloud DNS service</a></li>
+                                <li><a href="it_regular_inspection.html">Preventive Checking</a></li>
+                                <li><a href="it_emergency_borrowed_hardware_service.html">Hardware on Loan</a></li>
+                                <li><a href="it_pc_data_encryption.html">Data Encryption</a></li>
+                                <li><a href="it_computer_data_destruction.html">Data Wiping</a></li>
+                                <li><a href="it_training.html">Training</a></li>
+                            </ul> <!-- #EndLibraryItem -->
+                        </section>
+
+                    </div>
+                </div>
+                <div class="8u skel-cell-important">
+                    <div id="content">
+
+                        <!-- Content -->
+
+                        <article>
+                            <header>
+                                <h2>Economy Plan</h2>
+                                <table style="width:100%; border:0">
+                                    <tr>
+                                        <td style="width:120%">
+                                            <table style="width:120%">
+                                                <tr>
+                                                    <td style="width:100%">
+                                                        <p>Our company has launched a new range of IT Support plans!</p>
+                                                        <p> Since there are many customers inquire us about the low
+                                                            price support plan, we understand different enterprises
+                                                            have different requirement.</p>
+                                                        <p>Therefore, our company launched the economy support program
+                                                            to provide multiple options to all customers.</p>
+                                                        <p>This series will be aimed at cost-effective companies, by
+                                                            providing a series of arrival support plan to help small
+                                                            and medium-sized enterprises to minimize the cost!</p>
+                                                        <p>The comparison of all support plans are as following. You
+                                                            can select the required service plan for different
+                                                            conditions.</p>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+
+
+                                        </td>
+
+                                    </tr>
+                                </table>
+                                <form name="supportform">
+                                    <table id="table_general" style="font-size:0.75em; width:120%">
+                                        <tr style="background-color:#37c0fb; color:#FFFFFF;">
+                                            <td style="width:23%; padding:10px">Support Plan</td>
+                                            <td style="width: 10%; padding: 10px">PlanA </td>
+                                            <td style="width: 10%; padding: 10px">PlanB</td>
+                                            <td style="width: 10%; padding: 10px">PlanC </td>
+                                            <td style="width: 10%; padding: 10px">PlanD </td>
+                                            <td style="width: 10%; padding: 10px">PlanE</td>
+                                            <td style="width: 25%; padding: 10px">Remark</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7" style="padding:10px; background-color:#9bdffd">Immediate
+                                                Support</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding:10px; background-color:#E3E3E3">Telephone Support</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Remote Support</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Unlimited</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Through the remote
+                                                support, over 70% of problems can be solved rapidly. Learn more about
+                                                <a href="it_remote_support.html" target="_blank"><u>remote support</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #E3E3E3">On-site support</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">TBD</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">TBD</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">TBD</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">TBD</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">TBD</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #E3E3E3">PCs or notebooks</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="cno1" size="5" id="cno1" value="10" style="width:50px; "
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="cno2" size="5" id="cno2" value="20" style="width:50px; "
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="cno3" size="5" id="cno3" value="30" style="width:50px; "
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="cno4" size="5" id="cno4" value="40" style="width:50px; "
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="cno5" size="5" id="cno5" value="50" style="width:50px; "
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3; align-content: center"
+                                                rowspan="2">
+                                                <input type="button" value="Calculate" onclick="UpdatePlan()" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Servers&nbsp;</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="sno1" size="5" id="sno1" value="1" style="width:50px;"
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="sno2" size="5" id="sno2" value="2" style="width:50px; "
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="sno3" size="5" id="sno3" value="3" style="width:50px; "
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="sno4" size="5" id="sno4" value="4" style="width:50px; "
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <input type="text" name="sno5" size="5" id="sno5" value="5" style="width:50px; "
+                                                        maxlength="5" />
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7" style="padding: 10px; background-color:#9bdffd">Value-added
+                                                services</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #E3E3E3"> Support record</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Customers can check
+                                                their supporting records online. Learn more about <a href="it_customer_platform.html"
+                                                    target="_blank">support record </a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Hardware on Loan</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Learn more about<a
+                                                    href="it_emergency_borrowed_hardware_service.html" target="_blank">hardware
+                                                    on loan</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #E3E3E3">PC Health monitoring
+                                                service</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">✔</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Learn more about<a
+                                                    href="it_monitoring_and_warning_service.html" target="_blank">PC
+                                                    health monitoring service</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Email account</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center"> <span id="PlanAemail"><input type="text"
+                                                            name="email1" size="3" id="email1" value="0" style="width:50px; "
+                                                            maxlength="3" /></span></div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center"> <span id="PlanBemail"><input type="text"
+                                                            name="email2" size="3" id="email2" value="0" style="width:50px; "
+                                                            maxlength="3" /></span></div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center"> <span id="PlanCemail"><input type="text"
+                                                            name="email3" size="3" id="email3" value="0" style="width:50px; "
+                                                            maxlength="3" /></span></div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center"> <span id="PlanDemail"><input type="text"
+                                                            name="email4" size="3" id="email4" value="0" style="width:50px; "
+                                                            maxlength="3" /></span></div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center"> <span id="PlanEemail"><input type="text"
+                                                            name="email5" size="3" id="email5" value="0" style="width:50px; "
+                                                            maxlength="3" /></span></div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3"><input type="button"
+                                                    value="Calculate" onclick="UpdatePlan()" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Email account storage</td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <select name="dlemail1">
+                                                        <option value="40" selected="selected">50G </option>
+                                                        <option value="20">2G </option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <select name="dlemail2">
+                                                        <option value="40" selected="selected">50G </option>
+                                                        <option value="20">2G </option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <select name="dlemail3">
+                                                        <option value="40" selected="selected">50G </option>
+                                                        <option value="20">2G </option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <select name="dlemail4">
+                                                        <option value="40" selected="selected">50G </option>
+                                                        <option value="20">2G </option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">
+                                                <div style="align-content:center">
+                                                    <select name="dlemail5">
+                                                        <option value="40" selected="selected">50G </option>
+                                                        <option value="20">2G </option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #E3E3E3">Using Microsoft or
+                                                Google e-mail system.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; background-color: #9bdffd">Monthly fee</td>
+                                            <td style="padding: 10px; background-color: #9bdffd">
+                                                <div style="align-content:center">
+                                                    <span id="PlanA12">HK$1,000</span>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #9bdffd">
+                                                <div style="align-content:center">
+                                                    <span id="PlanB12">HK$2,000</span>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #9bdffd">
+                                                <div style="align-content:center">
+                                                    <span id="PlanC12">HK$3,000</span>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #9bdffd">
+                                                <div style="align-content:center">
+                                                    <span id="PlanD12">HK$4,000</span>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #9bdffd">
+                                                <div style="align-content:center">
+                                                    <span id="PlanE12">HK$5,500</span>
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px; background-color: #9bdffd">
+                                                1-year contract with 3-month trial period
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                                <p style="margin-top:20px">
+                                    <em>
+                                        # Complex Support Plan starts from HK$1,000.<br />
+                                        # Suitable for one support site only. If you need support for more than one
+                                        site, please contact us.
+
+                                    </em>
+                                </p>
+
+
+
+
+                            </header>
+
+
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+
+    <div id="footer">
+        <!-- #BeginLibraryItem "/Library/c_footer_top.lbi" -->
+        <div class="container" style="max-width:950px;">
+            <div class="row ">
+                <div class="6u">
+                    <div class="row collapse-at-2">
+                        <section class="6u">
+                            <h3>Terms and Conditions</h3>
+                            <ul class="links">
+                                <li><a href="disclaimer_statement.html">Legal Statement</a></li>
+                                <li><a href="privacy_statement.html">Privacy Statement</a></li>
+                            </ul>
+                            <br>
+
+                            <h3>Languages</h3>
+                            <ul class="links">
+                                <li><a href="./index.html"><img src="images/lang_eng.jpg" alt="eng version" /> Engish</a></li>
+                                <li><a href="http://www.topone.hk"><img src="images/lang_tc.jpg" alt="Traditional Chinese version" />
+                                        繁體中文</a></li>
+                                <li><a href="../SCH/index.html"><img src="images/lang_sc.jpg" alt="Simplified Chinese version" />
+                                        簡體中文</a></li>
+                            </ul>
+
+                        </section>
+
+                        <section class="6u">
+                            <h3>Site Map</h3>
+                            <ul class="links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about_us.html">About Us</a></li>
+                                <li><a href="it_support.html">IT Outsource</a></li>
+                                <li><a href="supportsystem.html">Support System</a></li>
+                                <li><a href="cloud_service.html">Cloud Services</a></li>
+                                <li><a href="system_development.html">Programming</a></li>
+                                <li><a href="solution.html">Solution</a></li>
+
+
+                                <li><a href="contact_us.html">Contact Us</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <section class="6u">
+                    <h3>Contact Us</h3>
+                    <form name="myform" id="myform" action="action_page.aspx" onSubmit="return formValidator()" method="post">
+                        <div class="row half collapse-at-2">
+                            <div class="6u">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="6u">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="row half">
+                            <div class="6u">
+                                <input type="text" name="telephone" id="telephone" placeholder="Telephone" />
+                            </div>
+                        </div>
+                        <div class="row half">
+                            <div class="12u">
+                                <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <!--              <div class="row half">
+                   <div class="6u">
+                                <input type="text" name="code_math" id="code_math" size="15" maxlength="6" placeholder="Authentication code" />
+                            </div>
+                        </div>
+                        <div class="row half">
+                            <div class="12u">
+                                <img src="code_math.php" id="getcode_math" title="Generate a new code" align="middle"></p>
+                            </div>
+                        </div>  -->
+<!-- Google recaptcha -->
+<div class="g-recaptcha" data-sitekey="6LcsbicTAAAAACuouDDshzfG3M0uIYuMSluDMlBh">
+</div>
+                        <input type="hidden" id="sender" name="sender" value="it_services_plan3.html" runat="server" />
+                        <div class="row half">
+                            <div class="12u">
+                                <ul class="actions">
+                                    <li><input type="submit" class="button alt" value="Send" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div><!-- #EndLibraryItem -->
+        <!-- #BeginLibraryItem "/Library/c_social_network.lbi" -->
+        <!-- Icons -->
+        <ul class="icons">
+            <li>
+                <a href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance">
+                    <img height="32" width="88" src="http://www.w3.org/WAI/wcag2AA-blue" alt="Level Double-A conformance,
+          W3C WAI Web Content Accessibility Guidelines 2.0">
+                </a>
+            </li>
+            <li><a href="http://validator.w3.org/check?uri=http://www.topone.hk/Eng/it_services_plan3.html"><img src="images/valid-html5.png"
+                        alt="Valid HTML5 HTML" /></a></li>
+            <li><a href="#" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+            <li><a href="#" class="icon fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+            <li><a href="http://www.praisage.com/topone" class="icon fa-praisage" target="_blank"><img src="images/footer_praisage.png"
+                        alt="" /></a></li>
+        </ul>
+
+
+        <!-- #EndLibraryItem -->
+        <!-- #BeginLibraryItem "/Library/c_footer.lbi" -->
+        <div id="footer_2">
+            <!-- Copyright -->
+            <div class="copyright">
+                <ul class="menu">
+                    <li>&copy; Topone Information Technology Ltd. All rights reserved</li>
+                </ul>
+            </div>
+        </div><!-- #EndLibraryItem -->
+    </div>
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+852 6220 2762", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+ 
+</body>
+
+</html>

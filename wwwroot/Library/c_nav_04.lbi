@@ -1,0 +1,137 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><nav id="nav">
+						<ul>
+							<li><a href="../index.html"><div id="home_text">首頁</div><img src="../images/logo_nav.png" alt=""/></a></li>
+							<li>
+								<a href="../about_us.html">關於我們</a>
+								<ul>
+									<li><a href="../ab_company.html">公司簡介</a></li>
+                                    <li><a href="../ab_news.html">最新消息</a></li>
+									<li><a href="../ab_business_distribution.html">業務分佈</a></li>
+									<li><a href="../ab_global_support.html">環球支援 </a></li>
+                                    <li><a href="../ab_parnter.html">合作夥伴</a>
+                                    <ul>
+                                    	<li><a href="../ab_tech_partners.html">技術合作夥伴</a></li>
+										<li><a href="../ab_business_partners.html">增值服務合作夥伴</a></li>
+                                    </ul>
+                                    </li>
+                                  </ul>
+                              </li>
+							</li>
+                            
+							<li>
+                            	<a href="../it_support.html">電腦支援</a>
+                                <ul>
+									<li><a href="../it_services.html">服務簡介</a></li>
+                                    <li>
+                                        <a href="../it_services_charges.html">服務收費</a>
+                                        <ul>
+                                            <li><a href="../it_services_plan1.html">全面保護</a></li>
+                                            <li><a href="../it_services_plan2.html">精明選擇</a></li>
+                                            <li><a href="../it_services_plan3.html">經濟實惠</a></li>
+                                        </ul>
+                                    </li>
+									<li><a href="../it_services_pledge.html">服務承諾</a></li>
+                                    <li><a href="../it_corporate_customers.html">公司客戶</a>
+                                    <ul>
+                                    	<li><a href="../it_success_stories.html">成功個案</a></li>
+										<li><a href="../it_customers.html">客戶好評</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="../it_customer_platform.html">客户平台</a></li>
+                                    <li><a href="../it_remote_support.html">遠端支援</a></li>
+                                    <li><a href="../it_sendbig_service.html">SendBig 服務</a></li>
+                                    <li><a href="../it_monitoring_and_warning_service.html">監控及預警服務</a></li>
+                                    <li><a href="../it_regular_inspection.html">定期檢查</a></li>
+                                    <li><a href="../it_emergency_borrowed_hardware_service.html">緊急暫借硬件服務</a></li>
+                                    <li><a href="../it_pc_data_encryption.html">電腦資料加密</a></li>
+                                    <li><a href="../it_computer_data_destruction.html">電腦資料銷毀</a></li>
+                                    <li><a href="../it_training.html">培訓</a></li>
+                                </ul>     
+                            </li>
+                
+                            
+                            
+                            <li><a href="../cloud_service.html">雲端服務</a>
+                            	<ul>
+									<li><a href="../cs_cloud_introduction.html">雲端簡介</a></li>
+                                    <li><a href="../cs_email_hosting.html">電郵寄存</a>
+                                    	<ul >
+                                    	<li><a href="../cs_email_office_365_email.html">Office 365電郵</a></li>
+										<li><a href="../cs_email_google_email.html">Google電郵</a></li>
+                                    	</ul>
+                                    </li>
+                                    <li><a href="../cs_microsoft_office_365_rental.html">Office 365計劃</a></li>
+                                    <li><a href="../cs_cloud_server.html">雲端伺服器</a></li>
+                                    <li><a href="../cs_microsoft_sharepoint_services.html">SharePoint服務</a></li>
+                                    <li><a href="../cs_microsoft_office_rental.html">MS Office租賃</a></li>
+                                    <li><a href="../cs_cloud_backup.html">雲端備份</a></li>
+                                    <li><a href="../cs_cloud_antivirus.html">雲端防毒</a></li>
+                                    <li><a href="../cs_web_hosting.html">網頁寄存</a></li>
+                                  </ul>
+								</li>
+                            
+                            
+                            
+                            
+                            
+                            
+							<li  class="current"><a href="../system_development.html">系統開發</a></li>
+                            
+                            
+
+<li><a href="../solution.html">解決方案</a>                      
+
+<ul>
+
+  <li><a href="../sol_vpn.html">系統安全</a>
+    <ul  >
+      <li><a href="../sol_vpn.html">VPN 安全遠端存取</a> </li>
+      <li><a href="../sol_security_token.html">保安編碼器</a></li>
+      <li><a href="../sol_endpoint_protector.html">Endpoint protector</a></li>
+      <li><a href="../sol_online_mgt_sys.html">上網行為管理系統</a></li>
+      
+      
+
+      <li><a href="../sol_window_mgt.html">桌面管理</a></li>
+      
+      
+      
+    </ul>
+  </li>
+
+  <li><a href="../sol_virtualization.html">虛擬化</a>
+    <ul  >
+      <li><a href="../sol_virtualization.html#p1">伺服器虛擬化</a></li>
+      <li><a href="../sol_virtualization.html#p2">網路虛擬化</a></li>
+      <li><a href="../sol_virtualization.html#p3">桌面平台虛擬化</a></li>
+      <li><a href="../sol_virtualization.html#p4">應用程式虛擬化</a></li>
+      <li><a href="../sol_virtualization.html#p5">儲存裝置虛擬化</a></li>
+    </ul>
+  </li>
+ 
+  <li><a href="../sol_wc.html">無線網路</a>
+    <ul  >
+      <li><a href="../sol_wc.html">無線控制器</a></li>
+      <li><a href="../sol_wap.html">無線存取點</a></li>
+    </ul>
+  </li>
+ 
+  <li><a href="../sol_web_design.html">網頁設計</a>
+    <ul  >
+      <li><a href="../sol_web_design.html">創意-設計</a></li>
+      <li><a href="../sol_web_program.html">功能-程式</a></li>
+      <li><a href="../sol_web_system.html">功能-更新系統功能</a></li>
+    </ul>
+  </li>
+  
+  <li><a href="../sol_video_conference.html">視像會議</a></li>
+  <li><a href="../sol_network_cabling.html">網絡佈線</a></li>
+  <li><a href="../sol_window_data.html">數據恢復</a></li>
+
+</ul>
+
+</li>
+							<li><a href="../promotion.html">推廣優惠</a></li>
+							<li><a href="../contact_us.html">聯絡我們</a></li>
+						</ul>
+					</nav>
