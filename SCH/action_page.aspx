@@ -298,7 +298,7 @@
         <!-- #BeginLibraryItem "/Library/c_mini_nav.lbi" -->
         <div id="mini_nav">
           <div id="mini_nav_inside">
-            <a href="http://www.topone.hk" target="_blank">繁</a>|
+            <a href="../index.html" target="_blank">繁</a>|
             <a href="http://www.itsupportchina.com" target="_blank">简</a>|
             <a href="http://www.hongkongitsupport.com">Eng</a>
           </div>

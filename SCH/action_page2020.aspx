@@ -418,7 +418,7 @@
                 <!-- #BeginLibraryItem "/Library/c_mini_nav.lbi" -->
                 <div id="mini_nav">
                     <div id="mini_nav_inside">
-                        <a href="http://www.topone.hk/" target="_blank">繁</a>|
+                        <a href="../index.html" target="_blank">繁</a>|
                         <a href="./sch/index.html" target="_blank">簡</a>|
                         <a href="./index.html">Eng</a>
                     </div>
