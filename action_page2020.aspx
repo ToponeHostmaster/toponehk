@@ -301,7 +301,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="system_development.html">Programming</a>
                                 <ul>
                                     <li>
@@ -323,7 +323,7 @@
                                         <a href="sd_apps.html">Mobile Application </a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="solution.html">Solution</a>
                                 <ul>
@@ -435,9 +435,9 @@
                             <li>
                                 <a href="cs_cloud_introduction.html"><img src="images/banner_02_e.jpg" alt=""  border="0" style="max-width:1200px;"/></a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="system_development.html"><img src="images/banner_03_e.jpg" alt=""  border="0" style="max-width:1200px;"/></a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="sol_virtualization.html"><img src="images/banner_04_e.jpg" alt=""  border="0" style="max-width:1200px;"/></a>
                             </li>

@@ -270,7 +270,7 @@
 										</li>
 								</ul>
 								</li>
-								<li>
+								<!-- <li>
 									<a href="system_development.html">系统开发</a>
 									<ul>
 										<li>
@@ -292,7 +292,7 @@
 											<a href="sd_apps.html">手机应用程序开发</a>
 										</li>
 									</ul>
-								</li>
+								</li> -->
 								<li>
 									<a href="solution.html">解决方案</a>
 									<ul>
@@ -402,9 +402,9 @@
 							<li>
 								<a href="cs_cloud_introduction.html"><img src="images/banner_02.jpg" alt=""  border="0" style="max-width:1200px;"/></a>
 							</li>
-							<li>
+							<!-- <li>
 								<a href="system_development.html"><img src="images/banner_03.jpg" alt=""  border="0" style="max-width:1200px;"/></a>
-							</li>
+							</li> -->
 							<li>
 								<a href="sol_virtualization.html"><img src="images/banner_04.jpg" alt=""  border="0" style="max-width:1200px;"/></a>
 							</li>
