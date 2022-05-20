@@ -120,10 +120,10 @@
 										<a href="it_services_charges.html">服务收费</a>
 										<ul>
 											<li>
-												<a href="it_services_plan1.html">全面保护</a>
+												<a href="it_services_plan1.html">优惠套餐</a>
 											</li>
 											<li>
-												<a href="it_services_plan7.html">精明选择</a>
+												<a href="it_services_plan7.html">个别选项</a>
 											</li>
 											<li>
 												<!-- <!-- <a href="it_services_plan3.html">经济实惠</a> --> -->

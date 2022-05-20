@@ -155,7 +155,7 @@
                                                 <a href="it_services_plan1.html">Comprehensive Protection</a>
                                             </li>
                                             <li>
-                                                <a href="it_services_plan7.html">Smart Choice</a>
+                                                <a href="it_services_plan7.html">Preferential Package</a>
                                             </li>
                                             <li>
                                                 <!-- <a href="it_services_plan3.html">Economy</a> -->
