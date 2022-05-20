@@ -259,7 +259,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="cloud_service.html">Cloud Services</a>
+                                <a href="cloud_service.html">Rental service</a>
                                 <ul>
                                     <li>
                                         <a href="cs_cloud_introduction.html">Cloud Overview</a>

@@ -163,7 +163,7 @@
                 </ul>
               </li>
               <li>
-                <a href="cloud_service.html">云端服务</a>
+                <a href="cloud_service.html">租频式服务</a>
                 <ul>
                   <li>
                     <a href="cs_cloud_introduction.html">云端简介</a>
