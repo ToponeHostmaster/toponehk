@@ -158,7 +158,7 @@
                                                 <a href="it_services_plan7.html">Smart Choice</a>
                                             </li>
                                             <li>
-                                                <a href="it_services_plan3.html">Economy</a>
+                                                <!-- <a href="it_services_plan3.html">Economy</a> -->
                                             </li>
                                             <li>
                                                 <a href="it_services_plan4.html">Social enterprise</a>
