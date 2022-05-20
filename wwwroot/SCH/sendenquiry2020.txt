@@ -1,0 +1,20 @@
+﻿<p><strong>Hi, </strong></p>
+
+<p>You have received an enquiry, pls kindly note the details as listed below: </p>
+
+<strong>Name: </strong>&nbsp; $csName$ <br/>
+
+<strong>Email:</strong>&nbsp;  $Email$ <br/>
+
+<strong>Telephone:</strong>&nbsp;  $Telephone$ <br/>
+
+<strong>Company:</strong>&nbsp;  $Company$ <br/>
+
+<strong>Plans:</strong>&nbsp; $Plans$ <br/>
+  
+<strong>Ref Code:</strong>&nbsp; $Refcode$ <br/>
+
+<strong>Enquiry / Comment:</strong>&nbsp; 
+
+<p>$Message$</p>
+

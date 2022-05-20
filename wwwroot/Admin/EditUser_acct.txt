@@ -1,0 +1,19 @@
+Dear <% username %>, <br/>
+
+<p> Welcome to the iT2ec community! </p>
+
+<p> Use your Member ID and Password for all FREE services on iT2ec.</p>
+
+Member ID: <% memberid %>
+<br/>Password: <% password %>
+
+<p>Upon initial Sign In, a Verification Code must be entered to validate your email address. This ensures accurate delivery of all iT2ec correspondence and prevents fraud.</p>
+
+Verification Code: <% activationcode %>
+
+<p>For initial Sign In, go to:
+<br/><a href="http://www.it2ec.com/activate.aspx" target="_blank">http://www.iT2ec.com/activate.aspx</a></p>
+
+<br/>Regards,
+<br/>www.it2ec.com
+

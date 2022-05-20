@@ -1,0 +1,19 @@
+Dear <% username %>, <br/>
+
+<p>Thank you for your recent request. </p>
+
+<p>Unfortunately, we cannot approve your website changes at this time because ... We recommend you by taking the following steps: </p>
+
+1) Sign in at iT2ec http://www.it2ec.com/login.aspx <br/>
+2) Click                                            <br/>
+3) Modify                                           <br/>
+
+<p> Please note that your changese cannot be published online until the changes has been approved. </p>
+
+<p> If you have any further questions you can visit our online Help Center, or you can contact our Customer Service Team directly at info@iT2ec.com </p>
+
+<p> We appreciate your cooperation in this matter. </p>
+
+<br/><br/>Regards,
+<br/>www.it2ec.com
+
